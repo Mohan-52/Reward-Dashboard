@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "points": 500,
+      "email": "JohnDoe@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "points": 800,
+      "email": "janesmith@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Mohan Oruganti",
+      "points": 1000,
+      "email": "mohan@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Ash Ketchum",
+      "points": 900,
+      "email": "ash@gmail.com"
+    }
+  ],
+  "activities": [
+    { "id": 1, "description": "Completed task", "points": 50 },
+    { "id": 2, "description": "Logged in daily", "points": 20 }
+  ],
+  "rewards": [
+    { "id": 1, "title": "Gift Card", "cost": 300 },
+    { "id": 2, "title": "Free Subscription", "cost": 500 }
+  ]
+}
