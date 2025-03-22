@@ -44,7 +44,7 @@ const Layout = () => {
       <Nav>
         <NavList>
           <NavItem>
-            <StyledNavLink to="/users">Users</StyledNavLink>
+            <StyledNavLink to="/">Users</StyledNavLink>
           </NavItem>
           <NavItem>
             <StyledNavLink to="/activities">Activities</StyledNavLink>
