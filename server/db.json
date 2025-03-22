@@ -1,36 +1,59 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "John Doe",
       "points": 500,
-      "email": "JohnDoe@gmail.com"
+      "email": "JohnDoe@gmail.com",
+      "password": "john123"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Jane Smith",
       "points": 800,
-      "email": "janesmith@gmail.com"
+      "email": "janesmith@gmail.com",
+      "password": "jane123"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Mohan Oruganti",
       "points": 1000,
-      "email": "mohan@gmail.com"
+      "email": "mohan@gmail.com",
+      "password": "mohan123"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Ash Ketchum",
       "points": 900,
-      "email": "ash@gmail.com"
+      "email": "ash@gmail.com",
+      "password": "ash12345"
     }
   ],
   "activities": [
-    { "id": 1, "description": "Completed task", "points": 50 },
-    { "id": 2, "description": "Logged in daily", "points": 20 }
+    {
+      "id": "a20a",
+      "activityType": "Task completion",
+      "description": "Complete the task on time",
+      "points": 20
+    },
+    {
+      "id": "31e4",
+      "activityType": "Community engagement",
+      "description": "Engage with community",
+      "points": 15
+    },
+    {
+      "id": "ce7b",
+      "activityType": "Content creation",
+      "description": "Create Content",
+      "points": 50
+    }
   ],
   "rewards": [
-    { "id": 1, "title": "Gift Card", "cost": 300 },
-    { "id": 2, "title": "Free Subscription", "cost": 500 }
+    { "id": 1, "title": "Amazon Gift Card", "cost": 500 },
+    { "id": 2, "title": "Spotify Premium Subscription", "cost": 300 },
+    { "id": 3, "title": "Starbucks Voucher", "cost": 200 },
+    { "id": 4, "title": "Movie Ticket", "cost": 150 },
+    { "id": 5, "title": "Gym Membership Discount", "cost": 700 }
   ]
 }

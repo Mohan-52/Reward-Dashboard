@@ -4,7 +4,6 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
 `;
 
 const Nav = styled.nav`
@@ -39,7 +38,7 @@ const Main = styled.main`
   background: #f5f5f5;
 `;
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
     <Container>
       <Nav>
@@ -58,7 +57,6 @@ const Layout = ({ children }) => {
           </NavItem>
         </NavList>
       </Nav>
-      <Main>{children}</Main>
     </Container>
   );
 };

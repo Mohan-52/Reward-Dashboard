@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addUsers, selectAllUsers } from "./usersSlice";
 import { Link } from "react-router-dom";
+import Layout from "../../components/layout/Layout";
 import { fetchUsers } from "../../services/api"; // API function
 import styled from "styled-components"; // Import Styled Components
 
@@ -111,32 +112,35 @@ const UsersList = () => {
   });
 
   return (
-    <UsersListContainer>
-      <Title>Users List</Title>
-      <FiltersContainer>
-        <SearchInput
-          type="text"
-          placeholder="Search users..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-        <SortingSelect onChange={(e) => setSortType(e.target.value)}>
-          <option value="name">Sort by Name</option>
-          <option value="points">Sort by Points</option>
-        </SortingSelect>
-      </FiltersContainer>
+    <>
+      <Layout />
+      <UsersListContainer>
+        <Title>Users List</Title>
+        <FiltersContainer>
+          <SearchInput
+            type="text"
+            placeholder="Search users..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+          <SortingSelect onChange={(e) => setSortType(e.target.value)}>
+            <option value="name">Sort by Name</option>
+            <option value="points">Sort by Points</option>
+          </SortingSelect>
+        </FiltersContainer>
 
-      <UserList>
-        {sortedUsers.map((user) => (
-          <UserItem key={user.id}>
-            <UserInfo>
-              {user.name} | <Points>Points: {user.points}</Points>
-            </UserInfo>
-            <ViewLink to={`/users/${user.id}`}>View Details</ViewLink>
-          </UserItem>
-        ))}
-      </UserList>
-    </UsersListContainer>
+        <UserList>
+          {sortedUsers.map((user) => (
+            <UserItem key={user.id}>
+              <UserInfo>
+                {user.name} | <Points>Points: {user.points}</Points>
+              </UserInfo>
+              <ViewLink to={`/users/${user.id}`}>View Details</ViewLink>
+            </UserItem>
+          ))}
+        </UserList>
+      </UsersListContainer>
+    </>
   );
 };
 
